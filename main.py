@@ -47,7 +47,7 @@ def predict(request: TextRequest):
 
 #Image Detection Model
 
-# Point this to the folder shown in your GitHub Desktop screenshot
+
 MODEL_PATH = "./models/vit-deepfake/vit-deepfake-detection-model-v1-20251220_213720/model"
 
 processor = ViTImageProcessor.from_pretrained(MODEL_PATH)
