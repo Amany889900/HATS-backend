@@ -23,7 +23,7 @@ app = FastAPI()
 class TextRequest(BaseModel):
     text: str
 
-MODEL_NAME = "abhi099k/ai-text-detector-L0"
+MODEL_NAME = "./models/text-detector"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model_txt = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
 
