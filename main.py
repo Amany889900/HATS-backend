@@ -11,10 +11,20 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification, ViTI
 import torch
 from PIL import Image
 import io
+from fastapi.middleware.cors import CORSMiddleware
 
 
 
 app = FastAPI()
+
+# Allow all origins during development (you can restrict later)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],                # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],                # Allows all methods (GET, POST, OPTIONS, etc.)
+    allow_headers=["*"],                # Allows all headers
+)
 
 
 #Text Detection Model
