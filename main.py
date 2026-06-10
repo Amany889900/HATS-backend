@@ -90,8 +90,8 @@ async def predict_image(file: UploadFile = File(...)):
 
 
 import os 
-GROQ_API_KEY   = os.getenv("GROQ_API_KEY",   "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")
-SERPER_API_KEY = os.getenv("SERPER_API_KEY", "ee285149e0f2ce50f74d1dae254489bbce93b141")
+GROQ_API_KEY   = os.getenv("GROQ_API_KEY",   "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")
+SERPER_API_KEY = os.getenv("SERPER_API_KEY", "f4c8d4545449d1ec47180589209e220bf70bcc4a")
 SELECTED_MODEL = os.getenv("GROQ_MODEL",     "openai/gpt-oss-120b")
 
 # Singleton agent instance (reuses the same HTTP session across requests)
