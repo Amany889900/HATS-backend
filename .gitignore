@@ -7,3 +7,4 @@ models/
 # Ignore Python environment and cache
 .venv/
 __pycache__/ 
+.env
